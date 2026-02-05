@@ -258,13 +258,13 @@ WiFi
 | LED | Anode (+) | D13 |
 | LED | Cathode (-) | GND (via 220Ω resistor) |
 
-![Circuit Diagram](docs/images/simulator.png)
+![Wokwi Circuit Simulator](docs/images/simulator.png)
 
 ## 🧪 Wokwi Simulation (In Progress)
 
 The hardware build is not complete yet, so a Wokwi simulation is used to validate wiring, I2C communication, and logic flow before final assembly.
 
-![Wokwi Simulation](docs/images/simulator.png)
+![Wokwi Arduino Simulator - Circuit Design](docs/images/simulator.png)
 
 This ensures the firmware and cloud pipeline work end-to-end while hardware is still being finalized.
 
