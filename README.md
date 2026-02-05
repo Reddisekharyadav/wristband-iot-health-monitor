@@ -6,6 +6,12 @@
 
 An advanced IoT wristband that monitors multiple health parameters in real-time and leverages Edge Impulse ML models for time series prediction and anomaly detection.
 
+**Project status**: In progress. Hardware is still being finalized, so simulation and test data are used to validate the pipeline.
+
+**Edge Impulse quick links**:
+- [Hospital Data Model (Live)](https://mltools.arduino.cc/public/394857/live)
+- [Sensor Data Model (Live)](https://mltools.arduino.cc/public/388214/latest)
+
 ![Wristband System](docs/images/sensordata.png)
 
 ## 📋 Table of Contents
@@ -18,6 +24,7 @@ An advanced IoT wristband that monitors multiple health parameters in real-time 
 - [Edge Impulse ML Integration](#edge-impulse-ml-integration)
 - [Installation](#installation)
 - [Circuit Diagram](#circuit-diagram)
+- [Wokwi Simulation (In Progress)](#wokwi-simulation-in-progress)
 - [Usage](#usage)
 - [Data Visualization](#data-visualization)
 - [Machine Learning Models](#machine-learning-models)
@@ -113,7 +120,7 @@ Before implementing the actual sensor integration, we tested the ML pipeline usi
 
 **Testing Model**: [Hospital Data Model (Live)](https://mltools.arduino.cc/public/394857/live)
 
-- Used real hospital patient data for initial ML testing
+- Used real hospital CSV data for initial ML testing (this is supported and works well for pipeline validation)
 - Validated time series prediction capabilities
 - Learned Edge Impulse training pipeline
 - Established baseline for anomaly detection
@@ -123,6 +130,8 @@ This testing phase helped refine the approach before collecting real sensor data
 ### Production Model: Real Sensor Data
 
 **Model Link**: [Edge Impulse Sensor Model](https://mltools.arduino.cc/public/388214/latest)
+
+This model is trained on real sensor data collected from the wristband and used for predictions in Edge Impulse.
 
 ### Capabilities
 
@@ -250,6 +259,14 @@ WiFi
 | LED | Cathode (-) | GND (via 220Ω resistor) |
 
 ![Circuit Diagram](docs/images/simulator.png)
+
+## 🧪 Wokwi Simulation (In Progress)
+
+The hardware build is not complete yet, so a Wokwi simulation is used to validate wiring, I2C communication, and logic flow before final assembly.
+
+![Wokwi Simulation](docs/images/simulator.png)
+
+This ensures the firmware and cloud pipeline work end-to-end while hardware is still being finalized.
 
 ## 📱 Usage
 
