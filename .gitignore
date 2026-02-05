@@ -1,0 +1,46 @@
+# Arduino Secrets - DO NOT COMMIT
+arduino_secrets.h
+
+# Build files
+build/
+*.hex
+*.bin
+*.elf
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Logs
+*.log
+
+# Compiled files
+*.o
+*.a
+*.so
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# Edge Impulse
+edge-impulse-standalone/
+model-parameters/
+tflite-model/
